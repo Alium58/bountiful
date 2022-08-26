@@ -617,7 +617,7 @@ string combat(int round, monster opp, string text) {
       return "item power pill";
     }
     // Ban logic
-  } else if(useBan && can_banish(my_location())) {
+  } else if(useBan && can_banish(my_location()) && !($monsters[blackberry bush,screambat,Smut orc pervert] contains opp)) {
     // Prefer skill banishes over items (they're free)
     skill skill_banisher = get_unused_skill_banisher(my_location());
     if(skill_banisher != $skill[none]) {
