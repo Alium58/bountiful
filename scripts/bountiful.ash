@@ -476,7 +476,7 @@ boolean hunt_bounty(bounty b) {
     if(!can_adventure(b.location))
       abort("Couldn't prepare the zone for some reason");
 
-    adventure(1, b.location, "combat");
+    adv1(b.location, "combat");
   } else {
     // turns out we're doing nothing
     print("Can't access the location of the bounty! Give up?", "orange");
